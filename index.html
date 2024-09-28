@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday to you My Queen</title>
+    <link rel="icon" href="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Balloons-PNG/Balloons_PNG_Image-771009156.png?m=1541639344" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    
+    <div class="card">
+      <div class="confetti">
+        <div class="squareOne"></div>
+        <div class="squareTwo"></div>
+        <div class="squareThree"></div>
+        <div class="squareFour"></div>
+        <div class="squareFive"></div>
+        <div class="squareSix"></div>
+        <div class="squareSeven"></div>
+        <div class="squareEight"></div>
+        <div class="squareNine"></div>
+        <div class="squareTen"></div>
+      </div>
+      <h1>Happy Birthday to You My Queen Apsu😍😘 <br>
+      May all your dream comes true🥰. <br>
+         Don't loose your hope I am with you to <br>
+          support in every situation👫. 
+        <br>
+      My Sweet heart 😋</h1>
+      <img src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Balloons-PNG/Balloons_PNG_Image-771009156.png?m=1541639344" alt="baloons"/>
+      <!-- <input type="image" id="icon" onclick="play()" autoplay src="play.png"/> -->
+      <audio autoplay  src="song.mp3"></audio>
+    </div>
+    <br>
+    <div class="image">
+   
+
+    <div class="gallery">
+        <img src="316541849_460093172930088_6549296780567168632_n.jpg" alt="a big park inside a modern city">
+        <img src="IMG_20240915_191903_251.webp" alt="a small street between building">
+        <img src="IMG_20240906_145150_165.webp" alt="seen from the sky of a big city">
+        <img src="313888993_853738772441671_5719077952868009928_n.jpg" alt="a bridge in the night">
+      </div>
+
+    </div>
+    <hr>
+    <div class="sayare">
+      <h3> 
+      <bold>
+   तिमी बिना अधूरो लाग्छ यो मन,
+   तिमी नै मेरो जीवन, तिमी नै मेरो धन।
+   <br>
+     तिमी मेरो आँखा भित्रको जून हो,
+    तिमी नै मेरो गीत, तिमी नै मेरो धून हो।
+  <br>
+    सपना तिम्रो देख्छु म हरेक रात,
+    तिमी नै मेरो माया, तिमी नै मेरो साथ।
+   </bold> </h3>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <div class="slider-wrapper">
+        <button id="prev-slide" class="slide-button material-symbols-rounded">
+          
+        </button>
+        <ul class="image-list">
+          <img class="image-item" src="IMG_20240726_115500_533.jpg " alt="img-3" />
+          <img class="image-item" src="10.jpg" alt="img-2" />
+
+          <img class="image-item" src="1696061153605.jpg" alt="img-4" />  
+          <img class="image-item" src="IMG_20240712_190258.jpg" alt="img-1" />
+
+          <img class="image-item" src="received_1549930438879266.jpeg" alt="img-4" />
+          <img class="image-item" src="received_733902165242136.jpg" alt="img-1" />
+         
+        
+        </ul>
+        <button id="next-slide" class="slide-button material-symbols-rounded">
+          
+        </button>
+      </div>
+      <div class="slider-scrollbar">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb"></div>
+        </div>
+      </div>
+    </div>
+<h3> <bold>Some memories of Yours</bold> </h3>
+    <br>
+   
+     <div id="videos">
+     <video width="400px" height="500px" controls src="325958021_6524341154248561_2764310155674637473_n.mp4"></video>
+     <video width="400px" height="500px" controls src="326144068_6191555750856685_4249924131857063967_n.mp4"></video>
+     <video width="400px" height="500px" controls src="WhatsApp Video 2024-08-15 at 9.16.06 PM.mp4"></video>
+     <video width="400px" height="500px" controls src="VID_35800714_181019_648.mp4"></video>
+     <video width="400px" height="500px" controls src="lv_7357156966159944977_20240415192040.mp4"></video>
+    
+     </div>
+     
+     <p class="para"> <bold> Once again Many many returns of this day Sanu🥰. <br>
+      This is a simple gift for you Sanu😊 <br>
+      I hope you like it.Apsu😍😘
+      </bold>
+      
+    </p>
+    
+    <a id="anchor" href="gift.html">Yas ma xou na Sanu</a>
+  
+    
+
+    <script>
+      
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      };
+      const initSlider = () => {
+    const imageList = document.querySelector(".slider-wrapper .image-list");
+    const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
+    const sliderScrollbar = document.querySelector(".container .slider-scrollbar");
+    const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
+    const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+    
+    // Handle scrollbar thumb drag
+    scrollbarThumb.addEventListener("mousedown", (e) => {
+        const startX = e.clientX;
+        const thumbPosition = scrollbarThumb.offsetLeft;
+        const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
+        
+        // Update thumb position on mouse move
+        const handleMouseMove = (e) => {
+            const deltaX = e.clientX - startX;
+            const newThumbPosition = thumbPosition + deltaX;
+            // Ensure the scrollbar thumb stays within bounds
+            const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
+            const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
+            
+            scrollbarThumb.style.left = `${boundedPosition}px`;
+            imageList.scrollLeft = scrollPosition;
+        }
+        // Remove event listeners on mouse up
+        const handleMouseUp = () => {
+            document.removeEventListener("mousemove", handleMouseMove);
+            document.removeEventListener("mouseup", handleMouseUp);
+        }
+        // Add event listeners for drag interaction
+        document.addEventListener("mousemove", handleMouseMove);
+        document.addEventListener("mouseup", handleMouseUp);
+    });
+    // Slide images according to the slide button clicks
+    slideButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const direction = button.id === "prev-slide" ? -1 : 1;
+            const scrollAmount = imageList.clientWidth * direction;
+            imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        });
+    });
+     // Show or hide slide buttons based on scroll position
+    const handleSlideButtons = () => {
+        slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
+        slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
+    }
+    // Update scrollbar thumb position based on image scroll
+    const updateScrollThumbPosition = () => {
+        const scrollPosition = imageList.scrollLeft;
+        const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
+        scrollbarThumb.style.left = `${thumbPosition}px`;
+    }
+    // Call these two functions when image list scrolls
+    imageList.addEventListener("scroll", () => {
+        updateScrollThumbPosition();
+        handleSlideButtons();
+    });
+}
+window.addEventListener("resize", initSlider);
+window.addEventListener("load", initSlider);
+    </script>
+    
+  </body>
+</html>
